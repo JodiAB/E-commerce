@@ -3,51 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your E-Commerce Store</title>
+    <title>E-Commerce Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.html">
-    <link rel="stylesheet" href="contact.html">
-    <link rel="stylesheet" href="shop.html">
+    <link rel="stylesheet" href="/HTML/about.html">
+    <link rel="stylesheet" href="/HTML/contact.html">
+    <link rel="stylesheet" href="/HTML/shop.html">
 </head>
 <body>
-    <header>
+    
+<div class="header">
+
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="125px">
+        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+            <ul id="MenuItems">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/HTML/shop.html">Shop</a></li>
+                <li><a href="/HTML/about.html">About Us</a></li>
+                <li><a href="/HTML/contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <div class="cart">
-            <a href="#">Cart (0)</a>
+        <a href="/HTML/cart.html"><img  src="/images/cart.png" width="30px" height="30px" ></a>
+<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+<div class="row">
+    <div class="col-2">
+        <h1>Style your workout, <br> the way you want to.</h1>
+        <p>Success is not the key to happiness; happiness is the key to success. If you love what you are doing, you will be successful.</p>
+        <a href="" class="btn">Explore &#8594</a>
+    </div>
+    <div class="col-2">
+        <img src="images/image1.png" >
+    </div>
+</div>
+</div>
+</div>
+   
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/category-1.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/category-2.jpg">
+            </div>
+            <div class="col-3">
+                <img src="images/category-3.jpg">
+            </div>
         </div>
-    </header>
+    </div>
+    
+</div>
 
-    <main>
-        <section class="product">
-            <img src="product1.jpg" alt="Product 1">
-            <h2>Product 1</h2>
-            <p>Description of Product 1</p>
-            <p>Price: $99.99</p>
-            <button>Add to Cart</button>
-        </section>
+<!-- FOOTER -->
 
-        <section class="product">
-            <img src="product2.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>Description of Product 2</p>
-            <p>Price: $129.99</p>
-            <button>Add to Cart</button>
-        </section>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS movile phones</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="/images/logo-white.png" alt="">
+                <p>Our mission is to provide a Pleasurable and Sports Accessible to the Many </p>
+            </div>
 
-        <!-- More product sections go here -->
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                <li> Coupons</li>
+                <li> Blog Posts</li>
+                <li> Return Policy</li>
+                <li> Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+               <ul>
+                <li> Facebook</li>
+                <li> Twitter</li>
+                <li> Instagram</li>
+                <li> Youtube</li>
+               </ul>
+            </div>
 
-    </main>
 
-    <footer>
-        <p>&copy; 2023 Your E-Commerce Store</p>
-    </footer>
-    <script src="script.js"></script> <!-- Add your JavaScript file here -->
+        </div>
+
+
+        <hr>
+        <p class="copyright"> Copyright 2023 - TheeJodas</p>
+    </div>
+</div>
 </body>
 </html>
