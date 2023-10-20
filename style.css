@@ -1,73 +1,4 @@
-/* 
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.cart a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #f00;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-
-main {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.product {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.product img {
-    max-width: 100%;
-}
-
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root{
@@ -588,6 +519,35 @@ th:last-child{
     text-align: right;
 }
 
+/* contact */
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
 /* media query for menu */
 
 @media only screen and (max-width: 800px){
@@ -595,7 +555,7 @@ th:last-child{
         position: absolute;
         top: 70px;
         left: 0;
-        background: #333;
+        background: transparent;
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
@@ -608,7 +568,7 @@ th:last-child{
         margin-top: 10px;
     }
     nav ul li a{
-        color: #fff;
+        color: var(--orange);
     }
 
     .menu-icon{
