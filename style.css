@@ -285,7 +285,7 @@ color: var(--grey);
 }
 
 .carousel-bullet {
-    color: #fff;
+    color: var(--orange);
     cursor: pointer;
     display: block;
     font-size: 35px;
